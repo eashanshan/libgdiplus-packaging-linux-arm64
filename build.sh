@@ -14,7 +14,7 @@ LIBGDIPLUS=$(pwd)
 LIBGDIPLUS_LIB=$(pwd)/lib
 sudo apt-get install libgif-dev autoconf libtool automake build-essential gettext libglib2.0-dev libcairo2-dev libtiff-dev libexif-dev
 #./configure --prefix=$LIBGDIPLUS
-./configure --host=aarch64 --enable-shared=yes --enable-static=yes --prefix=$LIBGDIPLUS_LIB
+./configure --host=aarch64 --enable-shared=yes --enable-static=yes --prefix=$LIBGDIPLUS
 make && make install
 cd ../
 
