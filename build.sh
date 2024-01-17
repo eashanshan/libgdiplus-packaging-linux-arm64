@@ -12,7 +12,7 @@ tar -zxvf libgdiplus-6.1.tar.gz
 cd libgdiplus-6.1/
 LIBGDIPLUS=$(pwd)
 LIBGDIPLUS_LIB=$(pwd)/lib
-sudo apt-get install libgif-dev autoconf libtool automake build-essential gettext libglib2.0-dev libcairo2-dev libtiff-dev libexif-dev
+sudo apt-get install libgif-dev autoconf libtool automake build-essential gettext libglib2.0-dev libcairo2-dev libtiff-dev libexif-dev libpango1.0-dev
 ./configure --with-pango --prefix=$LIBGDIPLUS
 make && make install
 cd ../
